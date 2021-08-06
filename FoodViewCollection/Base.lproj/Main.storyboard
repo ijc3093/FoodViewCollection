@@ -109,8 +109,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rcB-Ms-lpL">
-                                <rect key="frame" x="0.0" y="193" width="414" height="703"/>
+                                <rect key="frame" x="20" y="193" width="374" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="703" id="cI3-Hh-dOa"/>
+                                    <constraint firstAttribute="width" constant="374" id="id3-rg-kdK"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gMH-K9-pSS">
                                     <size key="itemSize" width="189" height="190"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -119,7 +123,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="n4e-VH-66x" customClass="FoodCollectionViewCell" customModule="FoodViewCollection" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="189" height="190"/>
+                                        <rect key="frame" x="92.5" y="0.0" width="189" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VKh-vm-EXU">
                                             <rect key="frame" x="0.0" y="0.0" width="189" height="190"/>
@@ -165,12 +169,12 @@
                         <viewLayoutGuide key="safeArea" id="jIb-gL-Wnm"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rcB-Ms-lpL" firstAttribute="trailing" secondItem="JjX-xx-jKB" secondAttribute="trailing" id="9Dd-gO-vgq"/>
+                            <constraint firstAttribute="bottom" secondItem="rcB-Ms-lpL" secondAttribute="bottom" id="I6C-rS-6KC"/>
                             <constraint firstItem="JjX-xx-jKB" firstAttribute="trailing" secondItem="jIb-gL-Wnm" secondAttribute="trailing" id="Idp-r1-v64"/>
-                            <constraint firstAttribute="bottom" secondItem="rcB-Ms-lpL" secondAttribute="bottom" id="PAD-F7-HpI"/>
-                            <constraint firstItem="rcB-Ms-lpL" firstAttribute="top" secondItem="JjX-xx-jKB" secondAttribute="bottom" constant="2" id="RWr-II-Bo7"/>
-                            <constraint firstItem="rcB-Ms-lpL" firstAttribute="leading" secondItem="JjX-xx-jKB" secondAttribute="leading" id="WJ5-c5-wCU"/>
+                            <constraint firstItem="rcB-Ms-lpL" firstAttribute="top" secondItem="JjX-xx-jKB" secondAttribute="bottom" constant="2" id="Iw2-gp-UKd"/>
+                            <constraint firstItem="rcB-Ms-lpL" firstAttribute="leading" secondItem="jIb-gL-Wnm" secondAttribute="leading" constant="20" id="XjB-SG-uOZ"/>
                             <constraint firstItem="JjX-xx-jKB" firstAttribute="top" secondItem="jIb-gL-Wnm" secondAttribute="top" id="c9u-RO-RGo"/>
+                            <constraint firstItem="jIb-gL-Wnm" firstAttribute="trailing" secondItem="rcB-Ms-lpL" secondAttribute="trailing" constant="20" id="sVI-1G-SmJ"/>
                             <constraint firstItem="JjX-xx-jKB" firstAttribute="leading" secondItem="jIb-gL-Wnm" secondAttribute="leading" id="tzC-TH-qwW"/>
                         </constraints>
                     </view>
@@ -181,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGm-bg-jMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="129"/>
+            <point key="canvasLocation" x="305.79710144927537" y="128.57142857142856"/>
         </scene>
         <!--Food Detail View Controller-->
         <scene sceneID="u51-po-sgX">
@@ -222,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJ8-tg-PdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2385" y="100"/>
+            <point key="canvasLocation" x="1155" y="149"/>
         </scene>
         <!--Menu-->
         <scene sceneID="qtn-Bl-emh">
